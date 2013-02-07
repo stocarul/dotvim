@@ -13,7 +13,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-rails.git'
+Bundle "myusuf3/numbers.vim"
 " vim-scripts repos
 " non github repos
 " ...
