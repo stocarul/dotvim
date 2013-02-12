@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle "myusuf3/numbers.vim"
+Bundle "tpope/vim-fugitive"
 " vim-scripts repos
 " non github repos
 " ...
