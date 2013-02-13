@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
+Bundle "scrooloose/nerdtree"
 " vim-scripts repos
 " non github repos
 " ...
@@ -34,6 +35,13 @@ filetype plugin indent on     " required!
 " END VUNDLE CONFIGURATION
 "
 
+
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 syntax enable
 set enc=utf-8
