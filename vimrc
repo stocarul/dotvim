@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
+Bundle "evidens/vim-twig"
 " vim-scripts repos
 " non github repos
 " ...
@@ -35,25 +36,37 @@ filetype plugin indent on     " required!
 " END VUNDLE CONFIGURATION
 "
 
-
-nnoremap <C-t> :NERDTreeToggle<CR>
-
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 syntax enable
 set enc=utf-8
 set background=dark
 
+" Set Auto-indent options
 set cindent
+set smartindent
+set autoindent
+
+" Enable Spell Checking
+set spell
+
 set nowrap
 
+" Turn on Line numbers
+set number
+
+" Set Tabs and spacing for PHP as recommended by PEAR and Zend
 set expandtab
 set tabstop=4
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
+
+" Show a status bar
+set ruler
+set laststatus=2
+
+"Set Search options highlight, and wrap search
+set hls is " highlight search text throughout the document.
+set wrapscan " wrap the scan around the document
+set ic "ignore case in search
 
 map <F2> :w<CR>
 imap <F2> <ESC>:w<CR>a
@@ -73,3 +86,20 @@ imap <F8> <F2><ESC>:!php "%<.php"<CR>
 nmap <F9> <F2>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
 imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
 
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Show lines that exceed 120 characters
+match ErrorMsg '\%120v.\+'
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
