@@ -11,12 +11,20 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
+
 " original repos on github
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
 Bundle "evidens/vim-twig"
+
+" Snipmate's dependencies
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+" Snipmate
+Bundle "garbas/vim-snipmate"
+
 " vim-scripts repos
 " non github repos
 " ...
