@@ -16,7 +16,16 @@ Bundle 'gmarik/vundle'
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
+Bundle "scrooloose/nerdcommenter"
 Bundle "evidens/vim-twig"
+Bundle "vim-scripts/easytags.vim"
+Bundle "tomtom/checksyntax_vim"
+Bundle "Raimondi/delimitMate"
+Bundle "spf13/PIV"
+
+Bundle "vim-scripts/L9"
+Bundle "vim-scripts/FuzzyFinder"
+Bundle "ervandew/supertab"
 
 " Snipmate's dependencies
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -97,9 +106,22 @@ imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 map <C-h> <C-w>h
+map <C-Left> <C-w>h
+
 map <C-j> <C-w>j
+map <C-Down> <C-w>j
+
 map <C-k> <C-w>k
+map <C-Up> <C-w>k
+
 map <C-l> <C-w>l
+map <C-Right> <C-w>l
+
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-Space>
+
+" Disable auto folding for php
+let g:DisableAutoPHPFolding = 1
 
 " Show lines that exceed 120 characters
 match ErrorMsg '\%120v.\+'
