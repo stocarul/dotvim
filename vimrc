@@ -16,23 +16,20 @@ Bundle 'gmarik/vundle'
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/nerdcommenter"
+"Bundle "scrooloose/nerdcommenter"
 Bundle "evidens/vim-twig"
-Bundle "vim-scripts/easytags.vim"
+Bundle "vim-scripts/AutoTag"
+"Bundle "vim-scripts/easytags.vim"
 Bundle "tomtom/checksyntax_vim"
 Bundle "Raimondi/delimitMate"
-Bundle "spf13/PIV"
+"Bundle "spf13/PIV"
 
-Bundle "vim-scripts/L9"
-Bundle "vim-scripts/FuzzyFinder"
-Bundle "ervandew/supertab"
+Bundle "vim-scripts/UltiSnips"
+Bundle "arnaud-lb/vim-php-namespace"
+Bundle "docteurklein/vim-symfony"
 
-" Snipmate's dependencies
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-" Snipmate
-Bundle "garbas/vim-snipmate"
+Bundle "mileszs/ack.vim"
+Bundle "vim-scripts/nerdtree-ack"
 
 " vim-scripts repos
 " non github repos
@@ -103,8 +100,10 @@ imap <F8> <F2><ESC>:!php "%<.php"<CR>
 nmap <F9> <F2>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
 imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
 
+" Nerd Tree shortcut
 nnoremap <C-t> :NERDTreeToggle<CR>
 
+" Split's shortcuts
 map <C-h> <C-w>h
 map <C-Left> <C-w>h
 
@@ -117,11 +116,23 @@ map <C-Up> <C-w>k
 map <C-l> <C-w>l
 map <C-Right> <C-w>l
 
-imap <C-Space> <C-x><C-o>
-imap <C-@> <C-Space>
+" imap <C-Space> <C-x><C-o>
+" imap <C-@> <C-Space>
 
-" Disable auto folding for php
-let g:DisableAutoPHPFolding = 1
+" add use statement (based on tags file) 
+map <Leader>u :call PhpInsertUse()<CR>
+imap <Leader>u <C-O>:call PhpInsertUse()<CR>
+
+" Expands the class name (under the cursor)
+imap <Leader>e <C-O>:call PhpExpandClass()<CR>
+map <Leader>e :call PhpExpandClass()<CR>
+
+" Open symfony interactive console
+map <Leader>c :execute ":!"g:symfony_enable_shell_cmd<CR>
+
+" Symfony's routing and DIC autocompletion
+imap <C-Space> <C-x><C-u>
+imap <C-@> <C-x><C-u>
 
 " Show lines that exceed 120 characters
 match ErrorMsg '\%120v.\+'
@@ -133,3 +144,31 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
+
+" Remove trailing sapces
+autocmd BufWritePre * :%s/\s\+$//e
+
+" Use ack-grep instead of ack
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+" first set path
+set path+=**
+
+" jump to a twig view in symfony
+function! s:SfJumpToView()
+    mark C
+    normal! ]M
+    let end = line(".")
+    normal! [m
+    try
+        call search('\v[^.:]+\.html\.twig', '', end)
+        normal! gf
+    catch
+        normal! g`C
+        echohl WarningMsg | echomsg "Template file not found" | echohl None
+    endtry
+endfunction
+com! SfJumpToView call s:SfJumpToView()
+
+" create a mapping only in a Controller file
+autocmd BufEnter *Controller.php nmap <buffer><leader>v :SfJumpToView<CR>
