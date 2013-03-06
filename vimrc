@@ -119,7 +119,7 @@ map <C-Right> <C-w>l
 " imap <C-Space> <C-x><C-o>
 " imap <C-@> <C-Space>
 
-" add use statement (based on tags file) 
+" add use statement (based on tags file)
 map <Leader>u :call PhpInsertUse()<CR>
 imap <Leader>u <C-O>:call PhpInsertUse()<CR>
 
@@ -169,6 +169,10 @@ function! s:SfJumpToView()
     endtry
 endfunction
 com! SfJumpToView call s:SfJumpToView()
+
+" Allow gf to work with PHP namespaced classes
+set includeexpr=substitute(v:fname,'\\\','/','g')
+set suffixesadd+=.php
 
 " create a mapping only in a Controller file
 autocmd BufEnter *Controller.php nmap <buffer><leader>v :SfJumpToView<CR>
