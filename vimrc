@@ -15,18 +15,20 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
+
 Bundle "scrooloose/nerdtree"
-"Bundle "scrooloose/nerdcommenter"
-Bundle "evidens/vim-twig"
+Bundle "scrooloose/nerdcommenter"
+
 Bundle "vim-scripts/AutoTag"
-"Bundle "vim-scripts/easytags.vim"
 Bundle "tomtom/checksyntax_vim"
 Bundle "Raimondi/delimitMate"
-"Bundle "spf13/PIV"
 
 Bundle "vim-scripts/UltiSnips"
 Bundle "arnaud-lb/vim-php-namespace"
 Bundle "docteurklein/vim-symfony"
+Bundle "evidens/vim-twig"
+Bundle "shawncplus/phpcomplete.vim"
+Bundle "ervandew/supertab"
 
 Bundle "mileszs/ack.vim"
 Bundle "vim-scripts/nerdtree-ack"
@@ -170,9 +172,16 @@ function! s:SfJumpToView()
 endfunction
 com! SfJumpToView call s:SfJumpToView()
 
+" create a mapping only in a Controller file
+autocmd BufEnter *Controller.php nmap <buffer><leader>v :SfJumpToView<CR>
+
 " Allow gf to work with PHP namespaced classes
 set includeexpr=substitute(v:fname,'\\\','/','g')
 set suffixesadd+=.php
 
-" create a mapping only in a Controller file
-autocmd BufEnter *Controller.php nmap <buffer><leader>v :SfJumpToView<CR>
+" Paste toggle
+nnoremap <F4> :set invpaste paste?<CR>
+set pastetoggle=<F4>
+set showmode
+
+set nrformats=
