@@ -3,8 +3,18 @@ dotvim
 
 My .vim directory!
 
-Add to ~/.vimrc:
+Clone it into .vim folder:
+```vim
+git clone --recursive https://github.com/stocarul/dotvim.git .vim
+```
 
+Add to ~/.vimrc:
 ```vim
 source ~/.vim/vimrc
+```
+
+Install bundles:
+```vim
+vi ~/.vim/vimrc
+:BundleInstall
 ```
