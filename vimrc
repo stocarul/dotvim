@@ -184,4 +184,5 @@ nnoremap <F4> :set invpaste paste?<CR>
 set pastetoggle=<F4>
 set showmode
 
+" Set default base number as 10
 set nrformats=
