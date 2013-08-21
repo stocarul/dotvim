@@ -35,6 +35,9 @@ Bundle "vim-scripts/nerdtree-ack"
 
 Bundle "kien/ctrlp.vim"
 
+Bundle "Lokaltog/vim-easymotion"
+Bundle "goldfeld/vim-seek"
+
 " vim-scripts repos
 " non github repos
 " ...
@@ -196,3 +199,9 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll)$',
     \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
     \ }
+
+" Change default key for easy motion
+let g:EasyMotion_leader_key = '<Leader>'
+
+" Allow counts for vim-seek
+let g:seek_subst_disable = 1
