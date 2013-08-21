@@ -33,6 +33,8 @@ Bundle "ervandew/supertab"
 Bundle "mileszs/ack.vim"
 Bundle "vim-scripts/nerdtree-ack"
 
+Bundle "kien/ctrlp.vim"
+
 " vim-scripts repos
 " non github repos
 " ...
@@ -186,3 +188,11 @@ set showmode
 
 " Set default base number as 10
 set nrformats=
+
+" Exclude some files from ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/cache/*
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll)$',
+    \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+    \ }
