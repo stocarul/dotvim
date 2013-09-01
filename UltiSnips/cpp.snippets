@@ -1,0 +1,19 @@
+
+snippet problem "my starting snippet for algorithmic contests"
+#include <cstdio>${4}
+#define infile "${5:`!v Filename('', 'input')`}.in"
+#define outfile "${6:$5}.out"
+${3}
+using namespace std;
+${2}
+int main() {
+    freopen(infile, "r", stdin);
+    freopen(outfile, "w", stdout);
+
+    ${1}
+
+    fclose(stdin);
+    fclose(stdout);
+    return 0;
+}
+endsnippet

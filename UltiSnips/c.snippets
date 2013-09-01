@@ -1,0 +1,32 @@
+
+snippet sc "scanf"
+scanf("${1}", ${2});
+endsnippet
+
+snippet pr "printf"
+printf("${1}", ${2});
+endsnippet
+
+snippet if "if .. (if) {"
+if (${1:/* condition */}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet for "for int loop (fori) {"
+for (${4:size_t} ${2:i} = 0; $2 < ${1:count}; ${3:++$2}) {
+	${0:/* code */}
+}
+endsnippet
+
+snippet while "while loop (condition)"
+while(${1:/* condition */}) {
+    ${0:/* code */}
+}
+endsnippet
+
+snippet fun "function"
+${1:void} ${2:main}(${3:/* args */}) {
+    ${4}
+}
+endsnippet
