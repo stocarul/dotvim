@@ -40,6 +40,7 @@ Bundle "Lokaltog/vim-easymotion"
 Bundle "goldfeld/vim-seek"
 
 Bundle "joonty/vdebug.git"
+Bundle 'kchmck/vim-coffee-script'
 
 " vim-scripts repos
 " non github repos
