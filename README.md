@@ -18,3 +18,8 @@ Install bundles:
 vi ~/.vim/vimrc
 :BundleInstall
 ```
+
+Install additional resources:
+```shel
+sudo apt-get install ack-grep
+```
