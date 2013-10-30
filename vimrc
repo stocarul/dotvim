@@ -39,9 +39,6 @@ Bundle "kien/ctrlp.vim"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "goldfeld/vim-seek"
 
-Bundle "joonty/vdebug.git"
-Bundle 'kchmck/vim-coffee-script'
-
 " vim-scripts repos
 " non github repos
 " ...
@@ -88,31 +85,29 @@ set shiftwidth=4
 set ruler
 set laststatus=2
 
-"Set Search options highlight, and wrap search
+" Set Search options highlight, and wrap search
 set hls is " highlight search text throughout the document.
 set wrapscan " wrap the scan around the document
 set ic "ignore case in search
 
-" Disable my custom shortcuts
-" Vdebug already use them
+" Custom shortcuts
+map <F2> :w<CR>
+imap <F2> <ESC>:w<CR>a
 
-"map <F2> :w<CR>
-"imap <F2> <ESC>:w<CR>a
+map <F3> :tabnew<CR>
+imap <F3> <ESC>:tabnew<CR>
 
-"map <F3> :tabnew<CR>
-"imap <F3> <ESC>:tabnew<CR>
+map <F5> :tabprev<CR>
+imap <F5> <ESC>:tabprev<CR>a
 
-"map <F5> :tabprev<CR>
-"imap <F5> <ESC>:tabprev<CR>a
+map <F6> :tabnext<CR>
+imap <F6> <ESC>:tabnext<CR>a
 
-"map <F6> :tabnext<CR>
-"imap <F6> <ESC>:tabnext<CR>a
+nmap <F8> <F2>:!php "%<.php"<CR>
+imap <F8> <F2><ESC>:!php "%<.php"<CR>
 
-"nmap <F8> <F2>:!php "%<.php"<CR>
-"imap <F8> <F2><ESC>:!php "%<.php"<CR>
-
-"nmap <F9> <F2>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
-"imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
+nmap <F9> <F2>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
+imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -static -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
 
 " Nerd Tree shortcut
 nnoremap <C-t> :NERDTreeToggle<CR>
