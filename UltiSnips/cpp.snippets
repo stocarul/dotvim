@@ -1,7 +1,7 @@
 
 snippet problem "my starting snippet for algorithmic contests"
 #include <cstdio>${4}
-#define infile "${5:`!v Filename('', 'input')`}.in"
+#define infile "${5:`!p snip.rv = snip.basename or "name"`}.in"
 #define outfile "${6:$5}.out"
 ${3}
 using namespace std;
