@@ -24,7 +24,6 @@ Bundle "vim-scripts/AutoTag"
 Bundle "tomtom/checksyntax_vim"
 Bundle "Raimondi/delimitMate"
 
-Bundle "vim-scripts/UltiSnips"
 Bundle "arnaud-lb/vim-php-namespace"
 Bundle "docteurklein/vim-symfony"
 Bundle "evidens/vim-twig"
@@ -33,6 +32,9 @@ Bundle "ervandew/supertab"
 
 Bundle "mileszs/ack.vim"
 Bundle "vim-scripts/nerdtree-ack"
+
+Bundle "SirVer/ultisnips"
+Bundle "honza/vim-snippets"
 
 Bundle "kien/ctrlp.vim"
 
