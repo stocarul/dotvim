@@ -134,6 +134,9 @@ map <C-Right> <C-w>l
 " imap <C-Space> <C-x><C-o>
 " imap <C-@> <C-Space>
 
+" Add vendors tag file
+set tags+=./tags.vendors,tags.vendors
+
 " add use statement (based on tags file)
 map <Leader>u :call PhpInsertUse()<CR>
 imap <Leader>u <C-O>:call PhpInsertUse()<CR>
