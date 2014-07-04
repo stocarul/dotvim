@@ -187,3 +187,8 @@ let g:phpcomplete_index_composer_command = "composer"
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-x><C-o>
 
+" Cut, copy and paste
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+"
