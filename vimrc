@@ -22,13 +22,15 @@ Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
 
-Bundle "vim-scripts/AutoTag"
 Bundle "tomtom/checksyntax_vim"
 Bundle "Raimondi/delimitMate"
 
-Bundle "StanAngeloff/php.vim"
-Bundle "arnaud-lb/vim-php-namespace"
-Bundle "docteurklein/vim-symfony"
+" phpcomplete extended (with symfony extension)
+Bundle "Shougo/vimproc"
+Bundle "Shougo/unite.vim"
+Bundle "m2mdas/phpcomplete-extended"
+Bundle "m2mdas/phpcomplete-extended-symfony"
+
 Bundle "evidens/vim-twig"
 Bundle "ervandew/supertab"
 
@@ -135,27 +137,6 @@ map <C-l> <C-w>l
 map <C-L> <C-w>l<C-w>_
 map <C-Right> <C-w>l
 
-" imap <C-Space> <C-x><C-o>
-" imap <C-@> <C-Space>
-
-" Add vendors tag file
-set tags+=./tags.vendors,tags.vendors
-
-" add use statement (based on tags file)
-map <Leader>u :call PhpInsertUse()<CR>
-imap <Leader>u <C-O>:call PhpInsertUse()<CR>
-
-" Expands the class name (under the cursor)
-imap <Leader>e <C-O>:call PhpExpandClass()<CR>
-map <Leader>e :call PhpExpandClass()<CR>
-
-" Open symfony interactive console
-map <Leader>c :execute ":!"g:symfony_enable_shell_cmd<CR>
-
-" Symfony's routing and DIC autocompletion
-imap <C-Space> <C-x><C-u>
-imap <C-@> <C-x><C-u>
-
 " Show lines that exceed 120 characters
 match ErrorMsg '\%120v.\+'
 
@@ -164,7 +145,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType php set omnifunc=phpcomplete_extended#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 " Remove trailing sapces
@@ -175,29 +156,6 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " first set path
 set path+=**
-
-" jump to a twig view in symfony
-function! s:SfJumpToView()
-    mark C
-    normal! ]M
-    let end = line(".")
-    normal! [m
-    try
-        call search('\v[^.:]+\.html\.twig', '', end)
-        normal! gf
-    catch
-        normal! g`C
-        echohl WarningMsg | echomsg "Template file not found" | echohl None
-    endtry
-endfunction
-com! SfJumpToView call s:SfJumpToView()
-
-" create a mapping only in a Controller file
-autocmd BufEnter *Controller.php nmap <buffer><leader>v :SfJumpToView<CR>
-
-" Allow gf to work with PHP namespaced classes
-set includeexpr=substitute(v:fname,'\\\','/','g')
-set suffixesadd+=.php
 
 " Paste toggle
 nnoremap <F4> :set invpaste paste?<CR>
@@ -220,3 +178,9 @@ let g:EasyMotion_leader_key = '<Leader>'
 
 " Allow counts for vim-seek
 let g:seek_subst_disable = 1
+
+" phpcomplete-extended
+let g:phpcomplete_index_composer_command = "composer"
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-x><C-o>
+
