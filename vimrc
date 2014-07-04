@@ -14,6 +14,8 @@ Bundle 'gmarik/vundle'
 
 " original repos on github
 
+Bundle "altercation/vim-colors-solarized"
+
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
 
@@ -64,6 +66,7 @@ filetype plugin indent on     " required!
 syntax enable
 set enc=utf-8
 set background=dark
+colorscheme solarized
 
 " Set Auto-indent options
 set cindent
