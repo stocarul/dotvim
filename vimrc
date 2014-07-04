@@ -30,6 +30,7 @@ Bundle "Shougo/unite.vim"
 Bundle "m2mdas/phpcomplete-extended"
 Bundle "m2mdas/phpcomplete-extended-symfony"
 
+Bundle "scrooloose/syntastic"
 Bundle "evidens/vim-twig"
 Bundle "ervandew/supertab"
 
