@@ -68,7 +68,10 @@ filetype plugin indent on     " required!
 syntax enable
 set enc=utf-8
 set background=dark
-colorscheme solarized
+
+if has('gui_running')
+    colorscheme solarized
+endif
 
 " Set Auto-indent options
 set cindent
