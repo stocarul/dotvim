@@ -24,6 +24,7 @@ Bundle "vim-scripts/AutoTag"
 Bundle "tomtom/checksyntax_vim"
 Bundle "Raimondi/delimitMate"
 
+Bundle "StanAngeloff/php.vim"
 Bundle "arnaud-lb/vim-php-namespace"
 Bundle "docteurklein/vim-symfony"
 Bundle "evidens/vim-twig"
