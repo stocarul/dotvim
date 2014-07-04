@@ -22,7 +22,6 @@ Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
 
-Bundle "tomtom/checksyntax_vim"
 Bundle "Raimondi/delimitMate"
 
 " phpcomplete extended (with symfony extension)
