@@ -27,7 +27,6 @@ Bundle "Raimondi/delimitMate"
 Bundle "arnaud-lb/vim-php-namespace"
 Bundle "docteurklein/vim-symfony"
 Bundle "evidens/vim-twig"
-Bundle "shawncplus/phpcomplete.vim"
 Bundle "ervandew/supertab"
 
 Bundle "mileszs/ack.vim"
@@ -35,6 +34,7 @@ Bundle "vim-scripts/nerdtree-ack"
 
 Bundle "SirVer/ultisnips"
 Bundle "honza/vim-snippets"
+Bundle "stocarul/ultisnips-symfony2"
 
 Bundle "kien/ctrlp.vim"
 
