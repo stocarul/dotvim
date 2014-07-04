@@ -19,14 +19,8 @@ vi ~/.vim/vimrc
 :BundleInstall
 ```
 
-Install additional resources:
+Build vimproc:
 ```shel
-sudo apt-get install ack-grep
-sudo apt-get install exuberant-ctags
-```
-
-Create tags file in every project:
-```shel
-ctags -R --languages=php -f tags.vendors vendor/ #for vendors
-ctags -R --languages=php src/ #for sources
+cd bundle/vimproc/
+make
 ```
