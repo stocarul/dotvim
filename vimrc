@@ -196,3 +196,13 @@ imap <C-v> <C-r><C-o>+"
 
 " Symfony2 command shell
 map <leader>c :!./app/console -s<CR>
+
+" Disabling the cursor/arrow keys
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
