@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 
 Bundle "altercation/vim-colors-solarized"
+Bundle "bling/vim-airline"
 
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
