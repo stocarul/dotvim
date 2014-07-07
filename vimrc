@@ -12,18 +12,20 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 
-" original repos on github
-
+" themes and statusbars
 Bundle "altercation/vim-colors-solarized"
 Bundle "bling/vim-airline"
 
+" Numbering, automatic closing of quotes and git
 Bundle "myusuf3/numbers.vim"
+Bundle "Raimondi/delimitMate"
 Bundle "tpope/vim-fugitive"
 
+" Filesystem tree (with search capability) and code commenter
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
-
-Bundle "Raimondi/delimitMate"
+Bundle "vim-scripts/nerdtree-ack"
+Bundle "mileszs/ack.vim"
 
 " phpcomplete extended (with symfony extension)
 Bundle "Shougo/vimproc"
@@ -31,25 +33,26 @@ Bundle "Shougo/unite.vim"
 Bundle "m2mdas/phpcomplete-extended"
 Bundle "m2mdas/phpcomplete-extended-symfony"
 
+" Syntax checker
 Bundle "scrooloose/syntastic"
+
+" Supports twig PHP templates
 Bundle "evidens/vim-twig"
+
+" TAB for autocompletion
 Bundle "ervandew/supertab"
 
-Bundle "mileszs/ack.vim"
-Bundle "vim-scripts/nerdtree-ack"
-
+" Snippets
 Bundle "SirVer/ultisnips"
 Bundle "honza/vim-snippets"
 Bundle "stocarul/ultisnips-symfony2"
 
+" Full path fuzzy file finder
 Bundle "kien/ctrlp.vim"
 
+" Single line and multi line navigation
 Bundle "Lokaltog/vim-easymotion"
 Bundle "goldfeld/vim-seek"
-
-" vim-scripts repos
-" non github repos
-" ...
 
 filetype plugin indent on     " required!
 "
