@@ -1,16 +1,16 @@
 
 snippet problem "my starting snippet for algorithmic contests"
-#include <cstdio>${4}
+#include <cstdio>${1}
 #define infile "${5:`!p snip.rv = snip.basename or "name"`}.in"
 #define outfile "${6:$5}.out"
-${3}
-using namespace std;
 ${2}
+using namespace std;
+${3}
 int main() {
     freopen(infile, "r", stdin);
     freopen(outfile, "w", stdout);
 
-    ${1}
+    ${4}
 
     fclose(stdin);
     fclose(stdout);
@@ -35,12 +35,12 @@ snippet cf "CodeForces starting snippet"
 #include <cmath>
 
 #define ll long long
-${3}
+${1}
 using namespace std;
 ${2}
 int main() {
 
-    ${1}
+    ${3}
 
     return 0;
 }
