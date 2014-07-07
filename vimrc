@@ -69,6 +69,9 @@ filetype plugin indent on     " required!
 " END VUNDLE CONFIGURATION
 "
 
+" Change the mapleader default key to ','
+let mapleader = ","
+
 syntax enable
 set enc=utf-8
 set background=dark
