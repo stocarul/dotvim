@@ -54,6 +54,9 @@ Bundle "kien/ctrlp.vim"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "goldfeld/vim-seek"
 
+" Open URI with browser
+Bundle "tyru/open-browser.vim"
+
 filetype plugin indent on     " required!
 "
 " Brief help
@@ -212,3 +215,7 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
+
+" Open Browser configuration
+nmap <Leader>o <Plug>(openbrowser-smart-search)
+vmap <Leader>o <Plug>(openbrowser-smart-search)
