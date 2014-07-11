@@ -182,6 +182,9 @@ set showmode
 " Set default base number as 10
 set nrformats=
 
+" Disable working path mode. Keep the first root.
+let g:ctrlp_working_path_mode = 0
+
 " Exclude some files from ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*~,*.zip,*/cache/*
 let g:ctrlp_custom_ignore = {
