@@ -33,6 +33,10 @@ Bundle "Shougo/unite.vim"
 Bundle "m2mdas/phpcomplete-extended"
 Bundle "m2mdas/phpcomplete-extended-symfony"
 
+" PHP Documentor
+Bundle "tobyS/vmustache"
+Bundle "tobyS/pdv"
+
 " Syntax checker
 Bundle "scrooloose/syntastic"
 
@@ -219,3 +223,7 @@ noremap   <Right>  <NOP>
 " Open Browser configuration
 nmap <Leader>o <Plug>(openbrowser-smart-search)
 vmap <Leader>o <Plug>(openbrowser-smart-search)
+
+" PHP Documentor configuration
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+map <Leader>d :call pdv#DocumentWithSnip()<CR>
