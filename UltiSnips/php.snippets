@@ -1,7 +1,7 @@
 snippet name "Inteligent class name and namespace" b
 <?php
 
-namespace ${4:`!v substitute(substitute(substitute(expand("%:p"), '\v(.*\/\l+)((\/\u\w+)+)\/\u\w+.php$', '\2', ''), '\/', '\\', 'g'), '\\', '', '')`};
+namespace ${4:`!v substitute(substitute(substitute(expand("%:p"), '\v(.*\/\U+)((\/\u\w+)+)\/\u\w+.php$', '\2', ''), '\/', '\\', 'g'), '\\', '', '')`};
 
 class ${2:`!p snip.rv = snip.basename or "name"`} ${3}
 {

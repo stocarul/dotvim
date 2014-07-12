@@ -169,7 +169,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Use ack-grep instead of ack
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg="ack-grep -H --smart-case --nocolor --nogroup --column"
 
 " first set path
 set path+=**
