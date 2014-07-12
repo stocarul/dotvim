@@ -24,3 +24,8 @@ Build vimproc:
 cd bundle/vimproc/
 make
 ```
+
+Required commands:
+```shel
+ack-grep
+```
