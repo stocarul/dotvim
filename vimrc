@@ -154,8 +154,8 @@ map <C-l> <C-w>l
 map <C-L> <C-w>l<C-w>_
 map <C-Right> <C-w>l
 
-" Show lines that exceed 120 characters
-match ErrorMsg '\%120v.\+'
+" Show lines that exceed 80 characters
+match ErrorMsg '\%80v.\+'
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
