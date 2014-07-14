@@ -31,6 +31,7 @@ Bundle "mileszs/ack.vim"
 Bundle "vim-scripts/AutoTag"
 Bundle "shawncplus/phpcomplete.vim"
 Bundle "arnaud-lb/vim-php-namespace"
+Bundle "stocarul/vim-symfony"
 
 " PHP Documentor
 Bundle "tobyS/vmustache"
