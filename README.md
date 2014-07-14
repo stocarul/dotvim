@@ -28,4 +28,11 @@ make
 Required commands:
 ```shel
 ack-grep
+ctags
+```
+
+Create tags file in every project:
+```shel
+ctags -R --languages=php -f tags.vendors vendor/ #for vendors
+ctags -R --languages=php --exclude=vendor . #for sources
 ```

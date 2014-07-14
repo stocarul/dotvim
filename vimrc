@@ -27,6 +27,10 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "vim-scripts/nerdtree-ack"
 Bundle "mileszs/ack.vim"
 
+" PHP Autocomplete
+Bundle "shawncplus/phpcomplete.vim"
+Bundle "vim-scripts/AutoTag"
+
 " PHP Documentor
 Bundle "tobyS/vmustache"
 Bundle "tobyS/pdv"
@@ -219,3 +223,10 @@ vmap <Leader>o <Plug>(openbrowser-smart-search)
 " PHP Documentor configuration
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 map <Leader>d :call pdv#DocumentWithSnip()<CR>
+
+"Configure tags plugin to use tags.vendors
+set tags+=./tags.vendors,tags.vendors
+
+"Autocomplete shortcuts
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-Space>
