@@ -28,8 +28,9 @@ Bundle "vim-scripts/nerdtree-ack"
 Bundle "mileszs/ack.vim"
 
 " PHP Autocomplete
-Bundle "shawncplus/phpcomplete.vim"
 Bundle "vim-scripts/AutoTag"
+Bundle "shawncplus/phpcomplete.vim"
+Bundle "arnaud-lb/vim-php-namespace"
 
 " PHP Documentor
 Bundle "tobyS/vmustache"
@@ -230,3 +231,9 @@ set tags+=./tags.vendors,tags.vendors
 "Autocomplete shortcuts
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
+
+"Namespace mappings
+inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+noremap <Leader>u :call PhpInsertUse()<CR>
+inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
+noremap <Leader>e :call PhpExpandClass()<CR>
