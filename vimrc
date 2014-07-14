@@ -33,6 +33,9 @@ Bundle "shawncplus/phpcomplete.vim"
 Bundle "arnaud-lb/vim-php-namespace"
 Bundle "stocarul/vim-symfony"
 
+" PHPUnit
+Bundle "joonty/vim-phpunitqf"
+
 " PHP Documentor
 Bundle "tobyS/vmustache"
 Bundle "tobyS/pdv"
@@ -237,4 +240,6 @@ imap <C-@> <C-Space>
 inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
 noremap <Leader>u :call PhpInsertUse()<CR>
 inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
-noremap <Leader>e :call PhpExpandClass()<CR>
+
+"Run unit test when saving a test file
+:autocmd BufWritePost *Test.php :Test %
