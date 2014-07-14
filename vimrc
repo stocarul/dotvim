@@ -27,12 +27,6 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "vim-scripts/nerdtree-ack"
 Bundle "mileszs/ack.vim"
 
-" phpcomplete extended (with symfony extension)
-Bundle "Shougo/vimproc"
-Bundle "Shougo/unite.vim"
-Bundle "m2mdas/phpcomplete-extended"
-Bundle "m2mdas/phpcomplete-extended-symfony"
-
 " PHP Documentor
 Bundle "tobyS/vmustache"
 Bundle "tobyS/pdv"
@@ -162,7 +156,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete_extended#CompletePHP
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 " Remove trailing sapces
@@ -198,11 +192,6 @@ let g:EasyMotion_leader_key = '<Leader>'
 
 " Allow counts for vim-seek
 let g:seek_subst_disable = 1
-
-" phpcomplete-extended
-let g:phpcomplete_index_composer_command = "composer"
-imap <C-Space> <C-x><C-o>
-imap <C-@> <C-x><C-o>
 
 " Cut, copy and paste
 vmap <C-c> "+yi
