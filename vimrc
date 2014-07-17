@@ -64,6 +64,9 @@ Bundle "goldfeld/vim-seek"
 " Open URI with browser
 Bundle "tyru/open-browser.vim"
 
+" This Vim plugin will search for terms using the excellent Dash.app
+Bundle 'rizzatti/dash.vim'
+
 filetype plugin indent on     " required!
 "
 " Brief help
@@ -243,3 +246,6 @@ inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 
 "Run unit test when saving a test file
 :autocmd BufWritePost *Test.php :Test %
+
+"Dash bindings
+:nmap <silent> <leader>da <Plug>DashSearch
