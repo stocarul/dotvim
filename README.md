@@ -19,12 +19,6 @@ vi ~/.vim/vimrc
 :BundleInstall
 ```
 
-Build vimproc:
-```shel
-cd bundle/vimproc/
-make
-```
-
 Required commands:
 ```shel
 ack-grep
