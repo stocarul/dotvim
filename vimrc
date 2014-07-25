@@ -12,6 +12,9 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 
+" Enable configuration file of each directory
+Bundle "thinca/vim-localrc"
+
 " themes and statusbars
 Bundle "altercation/vim-colors-solarized"
 Bundle "bling/vim-airline"
