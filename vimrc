@@ -19,6 +19,9 @@ Bundle "thinca/vim-localrc"
 Bundle "altercation/vim-colors-solarized"
 Bundle "bling/vim-airline"
 
+" Alignment
+Bundle "junegunn/vim-easy-align"
+
 " Numbering, automatic closing of quotes and git
 Bundle "myusuf3/numbers.vim"
 Bundle "Raimondi/delimitMate"
@@ -252,3 +255,9 @@ inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 
 "Dash bindings
 :nmap <silent> <leader>da <Plug>DashSearch
+
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
+nmap <Leader>a <Plug>(EasyAlign)
