@@ -265,3 +265,6 @@ nmap <Leader>a <Plug>(EasyAlign)
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
+
+" Force Saving Files that Require Root Permission
+cmap w!! %!sudo tee > /dev/null %
