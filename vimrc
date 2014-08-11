@@ -261,3 +261,7 @@ vmap <Enter> <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
 nmap <Leader>a <Plug>(EasyAlign)
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
