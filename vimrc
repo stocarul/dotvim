@@ -34,9 +34,12 @@ Bundle "vim-scripts/nerdtree-ack"
 Bundle "mileszs/ack.vim"
 
 " PHP Autocomplete
-Bundle "vim-scripts/AutoTag"
-Bundle "shawncplus/phpcomplete.vim"
-Bundle "arnaud-lb/vim-php-namespace"
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/unite.vim'
+Bundle 'm2mdas/phpcomplete-extended'
+Bundle 'm2mdas/phpcomplete-extended-symfony'
+
+" Symfony
 Bundle "stocarul/vim-symfony"
 
 " PHPUnit
@@ -175,6 +178,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 " Remove trailing sapces
@@ -238,17 +242,9 @@ vmap <Leader>o <Plug>(openbrowser-smart-search)
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 map <Leader>d :call pdv#DocumentWithSnip()<CR>
 
-"Configure tags plugin to use tags.vendors
-set tags+=./tags.vendors,tags.vendors
-
 "Autocomplete shortcuts
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
-
-"Namespace mappings
-inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
-noremap <Leader>u :call PhpInsertUse()<CR>
-inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 
 "Run unit test when saving a test file
 :autocmd BufWritePost *Test.php :Test %
@@ -268,3 +264,6 @@ vnoremap > >gv
 
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
+
+" PHP autocomplete extended
+let g:phpcomplete_index_composer_command = "composer"
