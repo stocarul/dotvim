@@ -21,12 +21,13 @@ vi ~/.vim/vimrc
 
 Required commands:
 ```shel
+c compiler
 ack-grep
 ctags
 ```
 
-Create tags file in every project:
+Build the vimproc bundle
 ```shel
-ctags -R --languages=php -f tags.vendors vendor/ #for vendors
-ctags -R --languages=php --exclude=vendor . #for sources
+cd bundle/vimproc/
+make
 ```
