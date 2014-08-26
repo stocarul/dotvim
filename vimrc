@@ -77,6 +77,9 @@ Bundle "tyru/open-browser.vim"
 " This Vim plugin will search for terms using the excellent Dash.app
 Bundle 'rizzatti/dash.vim'
 
+" Expand Abbreviation
+Bundle "mattn/emmet-vim"
+
 filetype plugin indent on     " required!
 "
 " Brief help
