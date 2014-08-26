@@ -19,8 +19,9 @@ Bundle "thinca/vim-localrc"
 Bundle "altercation/vim-colors-solarized"
 Bundle "bling/vim-airline"
 
-" Alignment
+" Alignment and regions
 Bundle "junegunn/vim-easy-align"
+Bundle "chrisbra/NrrwRgn"
 
 " Numbering, automatic closing of quotes and git
 Bundle "myusuf3/numbers.vim"
