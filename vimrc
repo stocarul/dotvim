@@ -23,10 +23,14 @@ Bundle "bling/vim-airline"
 Bundle "junegunn/vim-easy-align"
 Bundle "chrisbra/NrrwRgn"
 
-" Numbering, automatic closing of quotes and git
+" Numbering and git
 Bundle "myusuf3/numbers.vim"
-Bundle "Raimondi/delimitMate"
 Bundle "tpope/vim-fugitive"
+
+" Automagically adds closing quotes and braces
+" Easily Add, change and delete surroundings
+Bundle "Raimondi/delimitMate"
+Bundle "tpope/vim-surround"
 
 " Filesystem tree (with search capability) and code commenter
 Bundle "scrooloose/nerdtree"
