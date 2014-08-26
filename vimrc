@@ -68,7 +68,7 @@ Bundle "kien/ctrlp.vim"
 
 " Single line and multi line navigation
 Bundle "Lokaltog/vim-easymotion"
-Bundle "goldfeld/vim-seek"
+Bundle "justinmk/vim-sneak"
 
 " Open URI with browser
 Bundle "tyru/open-browser.vim"
