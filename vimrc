@@ -15,8 +15,9 @@ Bundle 'gmarik/vundle'
 " Enable configuration file of each directory
 Bundle "thinca/vim-localrc"
 
-" themes and statusbars
+" themes, first screen and statusbars
 Bundle "altercation/vim-colors-solarized"
+Bundle "mhinz/vim-startify"
 Bundle "bling/vim-airline"
 
 " Alignment and regions
