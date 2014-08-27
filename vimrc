@@ -85,6 +85,9 @@ Bundle 'rizzatti/dash.vim'
 " Expand Abbreviation
 Bundle "mattn/emmet-vim"
 
+" Previewing markup files
+Bundle "greyblake/vim-preview"
+
 filetype plugin indent on     " required!
 "
 " Brief help
