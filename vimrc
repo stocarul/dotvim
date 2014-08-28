@@ -15,10 +15,13 @@ Bundle 'gmarik/vundle'
 " Enable configuration file of each directory
 Bundle "thinca/vim-localrc"
 
-" themes, first screen and statusbars
+" themes and statusbars
 Bundle "altercation/vim-colors-solarized"
-Bundle "mhinz/vim-startify"
 Bundle "bling/vim-airline"
+
+" Session management
+Bundle "xolox/vim-session"
+Bundle "xolox/vim-misc"
 
 " Alignment and regions
 Bundle "junegunn/vim-easy-align"
@@ -279,3 +282,10 @@ cmap w!! %!sudo tee > /dev/null %
 
 " PHP autocomplete extended
 let g:phpcomplete_index_composer_command = "composer"
+
+" Vim session
+let g:session_autosave = 'yes'
+let g:session_autoload = 'yes'
+let g:session_autosave_periodic = 1
+let g:session_default_to_last = 1
+let g:session_command_aliases = 1
