@@ -161,8 +161,8 @@ imap <F6> <ESC>:tabnext<CR>a
 nmap <F8> <F2>:!php "%<.php"<CR>
 imap <F8> <F2><ESC>:!php "%<.php"<CR>
 
-nmap <F9> <F2>:!g++ -O2 -W -Wall -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
-imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
+nmap <F9> <F2>:!g++ -O2 -W -Wall -Wno-unused-function -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
+imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -Wno-unused-function -lm -o "%<" "%<.cpp"; time ./"%<"<CR>
 
 " Nerd Tree shortcut
 nnoremap <C-t> :NERDTreeToggle<CR>
