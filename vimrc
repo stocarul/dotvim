@@ -58,6 +58,9 @@ Bundle "joonty/vim-phpunitqf"
 Bundle "tobyS/vmustache"
 Bundle "tobyS/pdv"
 
+" Javascript
+Bundle "pangloss/vim-javascript"
+
 " Syntax checker
 Bundle "scrooloose/syntastic"
 

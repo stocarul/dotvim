@@ -23,7 +23,7 @@ Required commands:
 ```shel
 c compiler
 ack-grep
-ctags
+jshint
 ```
 
 Build the vimproc bundle
