@@ -42,12 +42,6 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "vim-scripts/nerdtree-ack"
 Bundle "mileszs/ack.vim"
 
-" PHP Autocomplete
-Bundle 'Shougo/vimproc'
-Bundle 'Shougo/unite.vim'
-Bundle 'm2mdas/phpcomplete-extended'
-Bundle 'm2mdas/phpcomplete-extended-symfony'
-
 " Symfony
 Bundle "stocarul/vim-symfony"
 
@@ -196,7 +190,6 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 " Remove trailing sapces
@@ -282,9 +275,6 @@ vnoremap > >gv
 
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
-
-" PHP autocomplete extended
-let g:phpcomplete_index_composer_command = "composer"
 
 " Vim session
 let g:session_autosave = 'yes'
