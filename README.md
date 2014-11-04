@@ -21,13 +21,12 @@ vi ~/.vim/vimrc
 
 Required commands:
 ```shel
-c compiler
 ack-grep
 jshint
 ```
 
-Build the vimproc bundle
+Create tags file in every project:
 ```shel
-cd bundle/vimproc/
-make
+ctags -R --languages=php -f tags.vendors vendor/  #for vendors
+ctags -R --languages=php --exclude=vendor .       #for sources
 ```

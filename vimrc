@@ -42,8 +42,10 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "vim-scripts/nerdtree-ack"
 Bundle "mileszs/ack.vim"
 
-" Symfony
-Bundle "stocarul/vim-symfony"
+" PHP Autocomplete
+Bundle "vim-scripts/AutoTag"
+Bundle "shawncplus/phpcomplete.vim"
+Bundle "arnaud-lb/vim-php-namespace"
 
 " PHPUnit
 Bundle "joonty/vim-phpunitqf"
@@ -51,6 +53,9 @@ Bundle "joonty/vim-phpunitqf"
 " PHP Documentor
 Bundle "tobyS/vmustache"
 Bundle "tobyS/pdv"
+
+" Symfony
+Bundle "stocarul/vim-symfony"
 
 " Javascript
 Bundle "pangloss/vim-javascript"
@@ -282,3 +287,11 @@ let g:session_autoload = 'yes'
 let g:session_autosave_periodic = 1
 let g:session_default_to_last = 1
 let g:session_command_aliases = 1
+
+"Configure tags plugin to use tags.vendors
+set tags+=./tags.vendors,tags.vendors
+
+"Namespace mappings
+inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+noremap <Leader>u :call PhpInsertUse()<CR>
+inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
