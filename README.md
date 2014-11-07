@@ -21,12 +21,22 @@ vi ~/.vim/vimrc
 
 Required commands:
 ```shel
+ctags
 ack-grep
 jshint
 ```
 
 Create tags file in every project:
 ```shel
-ctags -R --languages=php -f tags.vendors vendor/  #for vendors
-ctags -R --languages=php --exclude=vendor .       #for sources
+#for vendors
+ctags -R --languages=php -f tags.vendors vendor/    
+
+#for sources
+ctags -R --languages=php \
+--exclude=.git \
+--exclude=app \
+--exclude=vendor \
+--exclude=bin \
+--exclude=web \
+.
 ```
