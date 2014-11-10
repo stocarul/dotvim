@@ -29,10 +29,15 @@ jshint
 Create tags file in every project:
 ```shel
 #for vendors
-ctags -R --languages=php -f tags.vendors vendor/    
+ctags -R --languages=php \
+--PHP-kinds=+cf \
+--regex-PHP="/trait ([^ ]*)/\1/c/" \
+-f tags.vendors vendor
 
 #for sources
 ctags -R --languages=php \
+--PHP-kinds=+cf \
+--regex-PHP="/trait ([^ ]*)/\1/c/" \
 --exclude=.git \
 --exclude=app \
 --exclude=vendor \
