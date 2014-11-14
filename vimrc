@@ -75,7 +75,7 @@ Bundle "honza/vim-snippets"
 Bundle "stocarul/ultisnips-symfony2"
 
 " Full path fuzzy file finder
-Bundle "kien/ctrlp.vim"
+Bundle "ctrlpvim/ctrlp.vim"
 
 " Single line and multi line navigation
 Bundle "Lokaltog/vim-easymotion"
