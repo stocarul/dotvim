@@ -178,22 +178,17 @@ imap <F9> <F2><ESC>:!g++ -O2 -W -Wall -Wno-unused-function -lm -o "%<" "%<.cpp";
 " Nerd Tree shortcut
 nnoremap <C-t> :NERDTreeToggle<CR>
 
-" Split's shortcuts
+" Split's manipulation
 map <C-h> <C-w>h
-map <C-H> <C-w>h<C-w>_
-map <C-Left> <C-w>h
-
 map <C-j> <C-w>j
-map <C-J> <C-w>j<C-w>_
-map <C-Down> <C-w>j
-
 map <C-k> <C-w>k
-map <C-K> <C-w>k<C-w>_
-map <C-Up> <C-w>k
-
 map <C-l> <C-w>l
-map <C-L> <C-w>l<C-w>_
-map <C-Right> <C-w>l
+
+" window resizing
+map <S-Left> <C-w><
+map <S-Down> <C-w>-
+map <S-Up> <C-w>+
+map <S-Right> <C-w>>
 
 " Show lines that exceed 80 characters
 match ErrorMsg '\%80v.\+'
