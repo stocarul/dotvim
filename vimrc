@@ -33,6 +33,7 @@ Bundle "chrisbra/NrrwRgn"
 " Numbering and git
 Bundle "myusuf3/numbers.vim"
 Bundle "tpope/vim-fugitive"
+Bundle "esneider/YUNOcommit.vim"
 
 " Automagically adds closing quotes and braces
 " Easily Add, change and delete surroundings
@@ -303,3 +304,6 @@ set tags+=./tags.vendors,tags.vendors
 inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
 noremap <Leader>u :call PhpInsertUse()<CR>
 inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
+
+"Set the number of writes without committing before the message is shown
+let g:YUNOcommit_after = 200
