@@ -23,6 +23,9 @@ Bundle "bling/vim-airline"
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
 
+" Improved incremental searching
+Bundle "haya14busa/incsearch.vim"
+
 " Alignment and regions
 Bundle "junegunn/vim-easy-align"
 Bundle "chrisbra/NrrwRgn"
@@ -146,6 +149,11 @@ set laststatus=2
 set hls is " highlight search text throughout the document.
 set wrapscan " wrap the scan around the document
 set ic "ignore case in search
+
+" Incremental searching
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
 " Custom shortcuts
 map <F2> :w<CR>
