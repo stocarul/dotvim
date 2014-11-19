@@ -120,7 +120,11 @@ set enc=utf-8
 set background=dark
 
 if has('gui_running')
+    " Enable the solarized theme
     colorscheme solarized
+
+    " Enable Spell Checking
+    set spell
 endif
 
 " Set Auto-indent options
@@ -128,12 +132,7 @@ set cindent
 set smartindent
 set autoindent
 
-" Enable Spell Checking
-set spell
-
 set nowrap
-
-" Turn on Line numbers
 set number
 
 " Set Tabs and spacing for PHP as recommended by PEAR and Zend
