@@ -23,6 +23,9 @@ Bundle "bling/vim-airline"
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
 
+" Buffer management
+Bundle "jeetsukumaran/vim-buffergator"
+
 " Improved incremental searching
 Bundle "haya14busa/incsearch.vim"
 
@@ -301,3 +304,7 @@ inoremap <Leader>e <C-O>:call PhpExpandClass()<CR>
 
 "Set the number of writes without committing before the message is shown
 let g:YUNOcommit_after = 200
+
+"Buffer manager configuration
+let g:buffergator_suppress_keymaps = 1
+nmap <silent> <C-b> :BuffergatorToggle<CR>
