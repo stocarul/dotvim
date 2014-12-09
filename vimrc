@@ -23,6 +23,9 @@ Bundle "bling/vim-airline"
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
 
+" Recover from existing swap files
+Bundle "chrisbra/Recover.vim"
+
 " Buffer management
 Bundle "jeetsukumaran/vim-buffergator"
 
