@@ -1,14 +1,14 @@
 dotvim
 ======
 
-My .vim directory!
+My `.vim` directory!
 
-Clone it into .vim folder:
+Clone it into `.vim` folder:
 ```vim
 git clone --recursive https://github.com/stocarul/dotvim.git .vim
 ```
 
-Add to ~/.vimrc:
+Add to `~/.vimrc`:
 ```vim
 source ~/.vim/vimrc
 ```
@@ -26,7 +26,7 @@ ack-grep
 jshint
 ```
 
-Create tags file in every project:
+Create tags files in every project:
 ```shel
 #for vendors
 ctags -R --languages=php \
