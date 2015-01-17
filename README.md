@@ -24,6 +24,7 @@ Required commands:
 ctags
 ack-grep
 jshint
+redcarpet
 ```
 
 Create tags files in every project:
