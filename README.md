@@ -20,12 +20,11 @@ vi ~/.vim/vimrc
 ```
 
 Required commands:
-```shel
-ctags
-ack-grep
-jshint
-redcarpet
-```
+
+- [ctags](http://ctags.sourceforge.net)
+- [ack-grep](http://beyondgrep.com/install)
+- [jshint](https://github.com/jshint/jshint)
+- [redcarpet](https://github.com/vmg/redcarpet)
 
 Create tags files in every project:
 ```shel
