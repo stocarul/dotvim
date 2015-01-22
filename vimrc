@@ -311,3 +311,9 @@ let g:YUNOcommit_after = 200
 "Buffer manager configuration
 let g:buffergator_suppress_keymaps = 1
 nmap <silent> <C-b> :BuffergatorToggle<CR>
+
+"Disable scroll bars
+:set guioptions-=l
+:set guioptions-=L
+:set guioptions-=r
+:set guioptions-=R
