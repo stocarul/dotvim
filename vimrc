@@ -264,7 +264,7 @@ nmap <Leader>o <Plug>(openbrowser-smart-search)
 vmap <Leader>o <Plug>(openbrowser-smart-search)
 
 " PHP Documentor configuration
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+let g:pdv_template_dir = $HOME ."/.vim/pdv/templates_snip"
 map <Leader>d :call pdv#DocumentWithSnip()<CR>
 
 "Autocomplete shortcuts
