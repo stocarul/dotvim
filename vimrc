@@ -141,11 +141,13 @@ set autoindent
 set nowrap
 set number
 
-" Set Tabs and spacing for PHP as recommended by PEAR and Zend
+" Set Tabs and spacing globally
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+autocmd FileType javascript set tabstop=2 | set softtabstop=2 | set shiftwidth=2
 
 " Show a status bar
 set ruler
