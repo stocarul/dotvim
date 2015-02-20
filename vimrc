@@ -148,6 +148,7 @@ set softtabstop=4
 set shiftwidth=4
 
 autocmd FileType javascript set tabstop=2 | set softtabstop=2 | set shiftwidth=2
+autocmd FileType html set tabstop=2 | set softtabstop=2 | set shiftwidth=2
 
 " Show a status bar
 set ruler
