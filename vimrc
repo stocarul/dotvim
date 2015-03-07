@@ -193,6 +193,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" 81 characters vertical resize key binding
+noremap <Leader>vr <C-w>=<CR> :vertical resize 85<CR>
+
 " window resizing
 map <S-Left> <C-w><
 map <S-Down> <C-w>-
