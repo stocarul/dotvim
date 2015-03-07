@@ -322,6 +322,9 @@ nmap <silent> <C-b> :BuffergatorToggle<CR>
 :set guioptions-=r
 :set guioptions-=R
 
+"Scroll the window with 10 lines around
+set scrolloff=10
+
 "IndentLine config
 let g:indentLine_char = '.'
 
