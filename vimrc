@@ -324,3 +324,6 @@ nmap <silent> <C-b> :BuffergatorToggle<CR>
 
 "IndentLine config
 let g:indentLine_char = '.'
+
+" Reload ~/.vimrc key binding
+noremap <Leader>rv :source ~/.vimrc<CR>
