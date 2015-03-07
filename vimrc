@@ -17,6 +17,7 @@ Bundle "thinca/vim-localrc"
 
 " themes and statusbars
 Bundle "altercation/vim-colors-solarized"
+Bundle "Yggdroot/indentLine"
 Bundle "bling/vim-airline"
 
 " Session management
@@ -320,3 +321,6 @@ nmap <silent> <C-b> :BuffergatorToggle<CR>
 :set guioptions-=L
 :set guioptions-=r
 :set guioptions-=R
+
+"IndentLine config
+let g:indentLine_char = '.'
