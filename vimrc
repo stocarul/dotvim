@@ -200,7 +200,10 @@ map <S-Up> <C-w>+
 map <S-Right> <C-w>>
 
 " Show lines that exceed 80 characters
-match ErrorMsg '\%80v.\+'
+match ErrorMsg '\%>80v.\+'
+
+" Highlight the columns from 81 to 120
+execute 'set colorcolumn=' . join(range(81,120),',')
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
