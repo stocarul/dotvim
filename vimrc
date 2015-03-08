@@ -83,7 +83,8 @@ Bundle "ervandew/supertab"
 " Snippets
 Bundle "SirVer/ultisnips"
 Bundle "honza/vim-snippets"
-Bundle "stocarul/ultisnips-symfony2"
+Bundle "algotech/ultisnips-php"
+Bundle "algotech/ultisnips-javascript"
 
 " Full path fuzzy file finder
 Bundle "ctrlpvim/ctrlp.vim"
