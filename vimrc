@@ -8,116 +8,119 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle. Required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-" My Bundles here:
+" My Plugins here:
 
 " Enable configuration file of each directory
-Bundle "thinca/vim-localrc"
+Plugin 'thinca/vim-localrc'
 
 " themes and statusbars
-Bundle "altercation/vim-colors-solarized"
-Bundle "Yggdroot/indentLine"
-Bundle "bling/vim-airline"
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bling/vim-airline'
 
 " Plugin to udnerstand .editorconfig files
-Bundle "editorconfig/editorconfig-vim"
+Plugin 'editorconfig/editorconfig-vim'
 
 " Session management
-Bundle "xolox/vim-session"
-Bundle "xolox/vim-misc"
+Plugin 'xolox/vim-session'
+Plugin 'xolox/vim-misc'
 
 " Recover from existing swap files
-Bundle "chrisbra/Recover.vim"
+Plugin 'chrisbra/Recover.vim'
 
 " Buffer management
-Bundle "jeetsukumaran/vim-buffergator"
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " Improved incremental searching
-Bundle "haya14busa/incsearch.vim"
+Plugin 'haya14busa/incsearch.vim'
 
 " Alignment and regions
-Bundle "junegunn/vim-easy-align"
-Bundle "chrisbra/NrrwRgn"
+Plugin 'junegunn/vim-easy-align'
+Plugin 'chrisbra/NrrwRgn'
 
 " Numbering and git
-Bundle "myusuf3/numbers.vim"
-Bundle "tpope/vim-fugitive"
-Bundle "esneider/YUNOcommit.vim"
+Plugin 'myusuf3/numbers.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'esneider/YUNOcommit.vim'
 
 " Automagically adds closing quotes and braces
 " Easily Add, change and delete surroundings
-Bundle "Raimondi/delimitMate"
-Bundle "tpope/vim-surround"
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
 
 " Filesystem tree (with search capability) and code commenter
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/nerdcommenter"
-Bundle "vim-scripts/nerdtree-ack"
-Bundle "mileszs/ack.vim"
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-scripts/nerdtree-ack'
+Plugin 'mileszs/ack.vim'
 
 " PHP Autocomplete
-Bundle "vim-scripts/AutoTag"
-Bundle "shawncplus/phpcomplete.vim"
-Bundle "arnaud-lb/vim-php-namespace"
+Plugin 'vim-scripts/AutoTag'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'arnaud-lb/vim-php-namespace'
 
 " PHPUnit
-Bundle "joonty/vim-phpunitqf"
+Plugin 'joonty/vim-phpunitqf'
 
 " PHP Documentor
-Bundle "tobyS/vmustache"
-Bundle "tobyS/pdv"
+Plugin 'tobyS/vmustache'
+Plugin 'tobyS/pdv'
 
 " Symfony
-Bundle "stocarul/vim-symfony"
+Plugin 'stocarul/vim-symfony'
 
 " Javascript
-Bundle "pangloss/vim-javascript"
+Plugin 'pangloss/vim-javascript'
 
 " Syntax checker
-Bundle "scrooloose/syntastic"
+Plugin 'scrooloose/syntastic'
 
 " Supports twig PHP templates
-Bundle "evidens/vim-twig"
+Plugin 'evidens/vim-twig'
 
 " TAB for autocompletion
-Bundle "ervandew/supertab"
+Plugin 'ervandew/supertab'
 
 " Snippets
-Bundle "SirVer/ultisnips"
-Bundle "honza/vim-snippets"
-Bundle "algotech/ultisnips-php"
-Bundle "algotech/ultisnips-javascript"
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'algotech/ultisnips-php'
+Plugin 'algotech/ultisnips-javascript'
 
 " Full path fuzzy file finder
-Bundle "ctrlpvim/ctrlp.vim"
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Single line and multi line navigation
-Bundle "Lokaltog/vim-easymotion"
-Bundle "justinmk/vim-sneak"
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'justinmk/vim-sneak'
 
 " Open URI with browser
-Bundle "tyru/open-browser.vim"
+Plugin 'tyru/open-browser.vim'
 
 " This Vim plugin will search for terms using the excellent Dash.app
-Bundle 'rizzatti/dash.vim'
+Plugin 'rizzatti/dash.vim'
 
 " Expand Abbreviation
-Bundle "mattn/emmet-vim"
+Plugin 'mattn/emmet-vim'
 
 " Previewing markup files
-Bundle "greyblake/vim-preview"
+Plugin 'greyblake/vim-preview'
 
 filetype plugin indent on     " required!
 "
+"
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update
+"                   - or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins;
+"                   - append `!` to auto-approve removal
+"
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
 
 "
 " END VUNDLE CONFIGURATION
