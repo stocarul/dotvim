@@ -337,3 +337,6 @@ let g:indentLine_char = '.'
 
 " Reload ~/.vimrc key binding
 noremap <Leader>rv :source ~/.vimrc<CR>
+
+" Enable the expansion of <CR>
+let delimitMate_expand_cr = 2
