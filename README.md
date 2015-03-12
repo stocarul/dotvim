@@ -5,7 +5,7 @@ My `.vim` directory!
 
 Clone it into `.vim` folder:
 ```vim
-git clone --recursive https://github.com/stocarul/dotvim.git .vim
+git clone --recursive git@github.com:stocarul/dotvim.git .vim
 ```
 
 Add to `~/.vimrc`:
