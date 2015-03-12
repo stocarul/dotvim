@@ -20,6 +20,9 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "Yggdroot/indentLine"
 Bundle "bling/vim-airline"
 
+" Plugin to udnerstand .editorconfig files
+Bundle "editorconfig/editorconfig-vim"
+
 " Session management
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
