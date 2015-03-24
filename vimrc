@@ -23,6 +23,9 @@ Plugin 'bling/vim-airline'
 " Plugin to udnerstand .editorconfig files
 Plugin 'editorconfig/editorconfig-vim'
 
+" View images in Vim
+Plugin 'ashisha/image.vim'
+
 " Session management
 Plugin 'xolox/vim-session'
 Plugin 'xolox/vim-misc'

@@ -25,6 +25,8 @@ Required commands:
 - [ack-grep](http://beyondgrep.com/install)
 - [jshint](https://github.com/jshint/jshint)
 - [redcarpet](https://github.com/vmg/redcarpet)
+- Python libraries:
+  - [Pillow](https://github.com/python-pillow/Pillow)
 
 Create tags files in every project:
 ```shel
