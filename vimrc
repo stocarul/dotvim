@@ -45,7 +45,9 @@ Plugin 'chrisbra/NrrwRgn'
 
 " Numbering and git
 Plugin 'myusuf3/numbers.vim'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
+
 Plugin 'esneider/YUNOcommit.vim'
 
 " Automagically adds closing quotes and braces
@@ -349,3 +351,5 @@ noremap <Leader>rv :source ~/.vimrc<CR>
 
 " Enable the expansion of <CR>
 let delimitMate_expand_cr = 2
+
+let g:syntastic_html_checkers = []
