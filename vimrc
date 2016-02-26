@@ -356,3 +356,6 @@ let g:syntastic_html_checkers = []
 
 " Press Space to turn off highlighting and clear any message already displayed
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Reveal current file in tree
+noremap <leader>n :NERDTreeFind<CR>
